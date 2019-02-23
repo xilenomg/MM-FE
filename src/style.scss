@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Calibre';
+  src: url('./fonts/CalibreWeb-Regular.woff2') format('woff2'),
+    url('./fonts/CalibreWeb-Regular.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Calibre', 'HelveticaNeue', sans-serif;
+}
+
+.max {
+  color: green;
+}
+
+.milhas {
+  color: blue;
+}
