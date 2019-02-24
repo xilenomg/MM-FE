@@ -1,0 +1,45 @@
+@import './assets/styles/variables.scss';
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('./fonts/CalibreWeb-Regular.woff2') format('woff2'),
+    url('./fonts/CalibreWeb-Regular.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CalibreMedium';
+  src: url('./fonts/CalibreWeb-Medium.woff2') format('woff2'),
+    url('./fonts/CalibreWeb-Medium.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CalibreLight';
+  src: url('./fonts/CalibreWeb-Light.woff2') format('woff2'),
+    url('./fonts/CalibreWeb-Light.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Calibre', 'HelveticaNeue', sans-serif;
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+}
+
+h1 {
+  color: $secondaryColor;
+  border-bottom: 1px solid $secondaryColor;
+}
+
+.primaryButton {
+  background: $primaryColor;
+  color: $primaryColorContrast;
+  padding: $primarySpacing;
+  font-size: 18px;
+  border-radius: 5px
+}

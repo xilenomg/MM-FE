@@ -1,0 +1,29 @@
+@import './variables.scss';
+
+form {
+  input {
+    border: 1px solid $secondaryColor;
+    padding: $secondarySpacing;
+
+    &[type=text],
+    &[type=password] {
+      width: 100%;
+    }
+
+    &[type=text],
+    &[type=password],
+    &[type=number] {
+      border-radius: 5px;
+      display: block;
+      box-sizing: border-box;
+      font-size: 18px;
+      font-family: 'CalibreLight'
+    }
+  }
+  button{
+    transition: 0.2s all;
+    &:disabled{
+      background: $tertiaryColor;
+    }
+  }
+}

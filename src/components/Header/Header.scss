@@ -1,0 +1,9 @@
+@import '../../assets/styles/variables.scss';
+
+.Header{
+  background: $primaryColor;
+  padding: $primarySpacing;
+  img {
+    width: 150px
+  }
+}
