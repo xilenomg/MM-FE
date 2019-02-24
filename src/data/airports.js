@@ -27,4 +27,4 @@ export default [
     city: "Berlim - Alemanha",
     initials: "BER"
   }
-]
+];

@@ -43,3 +43,11 @@ h1 {
   font-size: 18px;
   border-radius: 5px
 }
+
+.mainErrorMessage {
+  border-radius: 5px;
+  padding: $primarySpacing;
+  background: $red-1;
+  color: white;
+  margin-bottom: $secondarySpacing;
+}

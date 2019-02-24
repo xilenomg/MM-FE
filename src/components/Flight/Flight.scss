@@ -1,0 +1,56 @@
+@import '../../assets/styles/variables.scss';
+
+.Flight {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $primarySpacing;
+  border: 1px solid $tertiaryColor;
+  padding: $secondarySpacing;
+
+  .FlightLabel{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'CalibreLight';
+  }
+
+  .FlightNumber {
+    color: $secondaryColor;
+    font-size: 20px;
+    font-family: 'CalibreMedium';
+  }
+
+  .FlightDates {
+    display: flex;
+    flex-direction: row;
+
+    .FlightDeparture,
+    .FlightArrival {
+      flex-basis: 50%;
+    }
+  }
+
+  .FlightExtraInfo{
+    display: flex;
+    flex-direction: row;
+    .FlightDuration, .FlightStops {
+      flex-basis: 50%;
+    }
+  }
+
+  .FlightPricing{
+    .FlightPricingPrice{
+      font-family: 'CalibreMedium';
+      color: $primaryColor;
+      font-size: 22px;
+    }
+    .FlightPricingDiscount{
+      color: $secondaryColor;
+      font-size: 16px;
+    }
+  }
+
+  .FlightAirline {
+    text-align: right;
+    color: $tertiaryColor;
+  }
+}

@@ -19,11 +19,16 @@ form {
       font-size: 18px;
       font-family: 'CalibreLight'
     }
+
+    &:disabled{
+      opacity: 0.2;
+      background: $tertiaryColor;
+    }
   }
   button{
     transition: 0.2s all;
     &:disabled{
-      background: $tertiaryColor;
+      opacity: 0.2;
     }
   }
 }

@@ -23,6 +23,16 @@ module.exports = {
   },
   module: {
     rules: [{
+        enforce: "pre",
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        loader: "eslint-loader",
+        options: {
+          formatter: require("eslint-friendly-formatter"),
+          fix: true,
+          emitError: true
+        }
+      }, {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
@@ -36,7 +46,7 @@ module.exports = {
         },
       },
       {
-        test: /\.scss$/,
+        test: /\.(css|scss)$/,
         use: [
           "style-loader",
           "css-loader",

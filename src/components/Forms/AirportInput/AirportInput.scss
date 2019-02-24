@@ -1,0 +1,21 @@
+@import '../../../assets/styles/variables.scss';
+
+.AirportInput{
+  position: relative;
+  .AirportInputList{
+    box-shadow: 0 0 2px $tertiaryColor;
+    z-index: 1;
+    position: absolute;
+    background: white;
+    width: 100%;
+
+    .AirportInputListItem {
+      cursor: pointer;
+      padding: $secondarySpacing;
+      &:hover{
+        background: $primaryColor;
+        color: $primaryColorContrast;
+      }
+    }
+  }
+}

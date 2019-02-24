@@ -1,7 +1,7 @@
 @import '../../../assets/styles/variables.scss';
 
 .FormSearch {
-  background: $tertiaryColor;
+  background: $grey-1;
   padding: $primarySpacing;
   label{
     font-family: 'CalibreMedium';
@@ -15,6 +15,14 @@
     justify-content: center;
     div{
       flex-basis: 50%;
+    }
+  }
+  .passengers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .passengersType{
+      flex-basis: 33.33%;
     }
   }
 }
