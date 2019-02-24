@@ -11,22 +11,22 @@ class Flight extends Component {
     departureDate: '',
     arrivalDate: '',
     flightNumber: '',
-    pricing: '',
+    pricing: {},
     from: '',
     to: '',
-    stops: ''
+    stops: 0
   };
 
   static propTypes = {
     airline: PropTypes.string,
-    duration: PropTypes.string,
+    duration: PropTypes.number,
     departureDate: PropTypes.string,
     arrivalDate: PropTypes.string,
     flightNumber: PropTypes.string,
-    pricing: PropTypes.string,
+    pricing: PropTypes.shape({}),
     from: PropTypes.string,
     to: PropTypes.string,
-    stops: PropTypes.string
+    stops: PropTypes.number
   };
   constructor(props) {
     super(props);
