@@ -1,11 +1,10 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    app: './src/index.js',
+    app: './src/index.jsx',
   },
   output: {
     filename: 'bundle.js',
@@ -14,7 +13,8 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(['dist/*']),
     new HtmlWebpackPlugin({
-      title: 'Output Management'
+      title: 'MaxMilhas - FE Teste',
+      template: './src/index.html',
     })
   ],
   output: {
@@ -23,6 +23,19 @@ module.exports = {
   },
   module: {
     rules: [{
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: [
+              ["@babel/env"],
+              "@babel/react"
+            ]
+          }
+        },
+      },
+      {
         test: /\.scss$/,
         use: [
           "style-loader",
